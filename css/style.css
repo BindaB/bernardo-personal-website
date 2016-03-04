@@ -1,1 +1,140 @@
 /* All style should go in this document. */
+body{
+	font-family: Verdana, sans-serif;
+	background-color: #e8edf3;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	color: white;
+}
+p, h4, ul, li{
+	margin: 0;
+}
+#header{
+	margin: 0;
+	padding: 0px;
+	background-color: #173e43;
+}
+#header ul {
+	width: 100%;
+	margin: 0;
+	padding: 25px;
+	padding-left: 0px;
+	background-color: #89bdd3;
+	text-align: center;
+	position: fixed;
+}
+#header ul li{
+	list-style-type: none;
+	font-size: 18px;
+	display: inline;
+}
+#header ul li a {
+	text-decoration: none;
+	color: white;
+}
+#header ul li a:hover {
+	background-color: lightblue;
+}
+#AboutLink, #backgroundLink, #resumeLink{
+	border-right: thick solid white;
+	border-right-width: 2px;
+	padding-right: 5px;
+}
+#whoIAm{
+	background: #3fb0ac;
+}
+#whoIAm h4{
+	text-align: center;
+	padding-top: 120px;
+}
+#whoIAm p{
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 70px;
+}
+#whoIAm p a{
+	text-decoration: none;
+}
+#background {
+	background-color: white;
+	font-weight: normal;
+	color: #3fb0ac;
+	padding: 75px;
+}
+#background hr{
+	width: 50%;
+}
+#background h4 {
+	text-align: center;
+}
+
+#background p {
+	text-align: center;
+	color: black;
+	padding: 5px;
+}
+
+#resume{
+	background-color: #1d2120;
+	text-align: center;
+}
+#resume h4{
+	padding-top: 60px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#resume h2 { 
+	font-size: 20px;
+	margin: 0 0 6px 0;
+	position: relative;
+}
+#resume h2 span {
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Georgia, serif;
+	font-style: italic;
+}
+#resume p {
+	margin: 0 0 16px 0;
+}
+#resume dt {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: right;
+	padding: 0 26px 0 0;
+	width: 150px;
+	border-right: 1px solid white; /*specify width, style, color of border*/
+}
+#resume dl {
+	display: table-row; /*makes dl behave like <tr>*/
+}
+#resume dl dt, dl dd {
+	display: table-cell; /*makes elements behave like <td>*/
+	padding-bottom: 20px;
+}
+#resume dl dd {
+	width: 500px;
+	padding-left: 26px;
+}
+
+#contact{
+	background-color: #c2d4d8;
+	color: black;
+	font-weight: normal;
+	padding: 75px;
+}
+#contact {
+	text-align: center;
+}
+#contact p {
+	text-align: center;
+	padding: 5px;
+}
