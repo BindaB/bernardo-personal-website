@@ -10,20 +10,21 @@
 		<script type="text/javascript">
 			$(function() 
 			{
-			  $('a[href*="#"]:not([href="#"])').click(function() 
+			  $('a[href*=#]:not([href=#])').click(function()
 			  {
-				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) 
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+				|| location.hostname == this.hostname)
 				{
-				  var target = $(this.hash);
-				  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				  if (target.length) 
-				  {
-					$('html, body').animate(
+
+					var target = $(this.hash);
+					//target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) 
 					{
-					  scrollTop: target.offset().top - 72
+						$('html,body').animate({
+						scrollTop: target.offset().top -72
 					}, 1000);
 					return false;
-				  }
+						}
 				}
 			  });
 			});
@@ -153,7 +154,10 @@
 					Contact Info
 				</h4>
 				<p>
-					Cell: <a href=tel:1-203-733-8213">203-733-8213</a>
+					Email: <a href="mailto:bindabernardo@gmail.com">bindabernardo@gmail.com</a>
+				</p>
+				<p>
+					Cell: <a href="tel:1-203-733-8213">203-733-8213</a>
 				</p>
 				<p>
 					<a href="https://github.com/BindaB">GitHub</a>
