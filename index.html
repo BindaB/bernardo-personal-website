@@ -1,166 +1,130 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" href="css/style.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
-		<script src="js/"></script>		
-		
-		<script type="text/javascript">
-			$(function() 
+<html lang=“en-us”>
+<head>
+	<meta charset="UTF-8">
+	<title>Bernardo Binda</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+	<script src="js/"></script>		
+	<script type="text/javascript">
+	$(function() 
+	{
+		$('a[href*="#"]:not([href="#"])').click(function() 
+		{
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) 
 			{
-			  $('a[href*="#"]:not([href="#"])').click(function() 
-			  {
-				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) 
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) 
 				{
-				  var target = $(this.hash);
-				  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				  if (target.length) 
-				  {
 					$('html, body').animate(
 					{
-					  scrollTop: target.offset().top - 72
+						scrollTop: target.offset().top - 72
 					}, 1000);
 					return false;
-				  }
 				}
-			  });
-			});
-		</script>
-	</head>
-	
-	<body>
-		<div id="header">
+			}
+		});
+	});
+	</script>
+</head>
 
-			<ul>
+<body>
+
+	<div id="header">
+		<ul>
+			<li><a href="#who-i-am">Who I Am</a></li>
+			<li><a href="#background">Background</a></li>
+			<li><a href="#resume">Resume</a></li>
+			<li><a href="#contact">Contact Info</a></li>
+		</ul>
+	</div>
+
+	<div id="who-i-am">
+		<h4>Who I Am</h4>
+		<p> 
+		Hello, my name is Bernardo Binda. I'm a Computer Science student
+		at <a href="http://wcsu.edu" target="_blank">Western Connecticut State University</a>.
+		I mostly work in C++ or Java, but recently have started to work in
+		HTML/CSS and Javascript. My personal interests include soccer, hardstyle,
+		and gaming.
+		</p>
+	</div>
+
+	<div id="background">
+		<div id="interest">
+			<h4>Interests</h4>
+			<p>Server-Client Interaction</p>
+			<p>Encryption</p>	
+			<p>Multithreading</p>
+		</div>
+		<hr />
+		<div>
+			<h4>Hoping To Learn</h4>
+			<p>Reverse Engineering</p>
+			<p>AngularJS</p>
+			<p>jQuery</p>
+		</div>
+	</div>
+
+	<div id="resume">
+		<dl>
+			<dt>Education</dt>
+			<dd>
+				<h2>Western Connecticut State University</h2>
+				<p><strong>Major:</strong> Computer Science</p>
+				<p><strong>Minor:</strong> Security & Web Development</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>Skills</dt>
+			<dd>
+				<h2>Programming</h2>
+				<p>Proficient in Java, C++, SQL, and Object-Oriented Programming</p>
+				<h2>Software</h2>
+				<p>Eclipse, Visual Studio, MySQL</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt>Experience</dt>
+			<dd>
+				<h2>Engineering Summer Project<span>Summer 2015</span></h2>
+				<ul>
+					<li>
+					Designed a client-server battle simulator where a user will go through several
+					GUIs in order to select a squad of characters, check user statistics and battle an AI using multithreading
+					in Java.n the criminal underworld
+					</li>
+					<li>Heavy focus on UML documentation and programming within a small group environment</li>
+				</ul>
+			</dd>
+		</dl>
+		<dl>
+			<dt>Other Experience</dt>
+				<dd>
+					<h2>Floor Expert, American Eagle<span>September 2012-December 2014</span></h2>
+					<ul>
+						<li>
+						Gained promotion due to an impressive work ethic and 
+						a positive attitude in a stressful and taxing environment
+					    </li>
+					</ul>
+					<h2>Training Coordinator, Western Connecticut State University <span>January 2015- present</span></h2>
+					<ul>
+						<li>Created and organized workshops and tutorials that taught students various programs</li>
+						<li>Gained valuable interpersonal communication skills by collaborating with students from many fields.</li>
+						<li>Earned promotion after impressing quickly and improving team members skills and attention to procedure</li>
+					</ul>
+				</dd>
+		</dl>
+	</div>	
 				
-				<li><a id="AboutLink" href="#whoIAm">Who I Am</a></li>
-				<li><a id="backgroundLink" href="#background">Background</a></li>
-				<li><a id="resumeLink" href="#resume">Resume</a></li>
-				<li><a id="ContactLink" href="#contact">Contact Info</a></li>
-			</ul>
-		</div>
-		<div id="whoIAm">
-			
-			<h4>
-				Who I Am
-			</h4>
-			
-			<br />
-			
-			<p>
-				Hello, my name is Bernardo Binda. I'm a Computer Science student
-				at <a href="http://wcsu.edu" target="_blank">Western Connecticut State University</a>.
-				I mostly work in C++ or Java, but recently have started to work in
-				HTML/CSS and Javascript. My personal interests include soccer, hardstyle
-				and gaming.
-			</p>
-		</div>
-		<div id="background">
-			<div id="interest">
-				<h4>
-					Interests
-				</h4>
-				<p>
-					Server-Client Interaction
-				</p>
-				<p>
-					Encryption
-				</p>	
-				<p>	
-					Multithreading
-				</p>
-			</div>
-			<hr />
-			<div>
-				<h4>
-					Hoping To Learn
-				</h4>
-				<p>
-					Reverse Engineering
-				</p>
-				<p>
-					AngularJS
-				</p>
-				<p id="learnBottom">
-					jQuery
-				</p>
-			</div>
-		</div>
-		<div id="resume">
-			<dl>
-				<dt>Education</dt>
-				<dd>
-					<h2>Western Connecticut State University</h2>
-					<p><strong>Major:</strong> Computer Science<br />
-					<strong>Minor:</strong> Security & Web Development
-				</dd>
-			</dl>
-			<dl>
-				<dt>Skills</dt>
-				<dd>
-					<h2>Programming</h2>
-					<p>Proficient in Java, C++, SQL, and Object-Oriented Programming</p>
-					<h2>Software</h2>
-					<p>Eclipse, Visual Studio, MySQL</p>
-				</dd>
-			</dl>
-			
-			<dl>
-				<dt>Experience</dt>
-					<dd>
-						<h2>
-							Engineering Summer Project	<br />
-							<span>Summer 2015</span>
-						</h2>
-						<ul>
-							<li>Designed a client-server battle simulator where a user will go through several
-							GUIs in order to select a squad of characters, check user statistics and battle an AI using multithreading
-							in Java.n the criminal underworld</li>
-							<li>Heavy focus on UML documentation and programming within a small group environment</li>
-						</ul>
-					</dd>
-			</dl>
-			
-			<dl>
-				<dt>Other Experience</dt>
-					<dd>
-						<h2>
-							Floor Expert, American Eagle	<br />
-							<span>September 2012-December 2014</span>
-						</h2>
-						<ul>
-							<li>Gained promotion due to an impressive work ethic and a positive attitude in a stressful
-							and taxing environment</li>
-						</ul>
-						
-						<br /><br />
-						
-						<h2>
-							Training Coordinator, Western Connecticut State University <br />
-							<span>January 2015- present</span></h2>
-						<ul>
-							<li>Created and organized workshops and tutorials that taught students various programs</li>
-							<li>Gained valuable interpersonal communication skills by collaborating with students from many fields.</li>
-							<li>Earned promotion after impressing quickly and improving team members skills and attention to procedure</li>
-						</ul>
-					</dd>
-			</dl>
-		</div>		
-		<div id="contact">
-				<h4>
-					Contact Info
-				</h4>
-				<p>
-					Cell: <a href=tel:1-203-733-8213">203-733-8213</a>
-				</p>
-				<p>
-					<a href="https://github.com/BindaB">GitHub</a>
-				</p>
-				<p>
-					<a href="http://www.meetup.com/members/199865832/">Meetup</a>
-				</p>				
-		</div>		
-	</body>
+	<div id="contact">
+		<h4>Contact Info</h4>
+			<p>Cell: <a href="tel:1-203-733-8213">203-733-8213</a></p>
+			<p><a href="https://github.com/BindaB">GitHub</a></p>
+			<p><a href="http://www.meetup.com/members/199865832/">Meetup</a></p>
+	</div>
+
+</body>
 </html>
