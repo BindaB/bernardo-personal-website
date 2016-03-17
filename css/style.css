@@ -1,5 +1,10 @@
 /* All style should go in this document. */
-body{
+
+* {
+	box-sizing: border-box;
+}
+
+body {
 	font-family: Verdana, sans-serif;
 	background-color: #e8edf3;
 	margin: 0;
@@ -7,15 +12,19 @@ body{
 	overflow-x: hidden;
 	color: white;
 }
-p, h4, ul, li{
+
+p, h4, ul, li {
 	margin: 0;
 }
 
-#header{
+/*-- HEADER --*/
+
+#header {
 	margin: 0;
 	padding: 0px;
 	background-color: #173e43;
 }
+
 #header ul {
 	width: 100%;
 	margin: 0;
@@ -25,48 +34,63 @@ p, h4, ul, li{
 	text-align: center;
 	position: fixed;
 }
-#header ul li{
+
+#header ul li {
 	list-style-type: none;
 	font-size: 18px;
 	display: inline;
 }
+
 #header ul li a {
 	text-decoration: none;
 	color: white;
 }
+
 a:hover {
 	background-color: lightblue;
 }
-#AboutLink, #backgroundLink, #resumeLink{
+
+#header li {
 	border-right: thick solid white;
 	border-right-width: 2px;
 	padding-right: 5px;
 }
-#whoIAm{
+
+/*-- WHO I AM --*/
+
+#who-i-am {
 	background: #3fb0ac;
 }
-#whoIAm h4{
+
+#who-i-am h4 {
 	text-align: center;
 	padding-top: 120px;
 }
-#whoIAm p{
+
+#who-i-am p {
 	text-align: center;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-bottom: 70px;
 }
-#whoIAm p a{
+
+#who-i-am p a {
 	text-decoration: none;
 }
+
+/*-- BACKGROUND --*/
+
 #background {
 	background-color: white;
 	font-weight: normal;
 	color: #3fb0ac;
 	padding: 75px;
 }
-#background hr{
+
+#background hr {
 	width: 50%;
 }
+
 #background h4 {
 	text-align: center;
 }
@@ -77,35 +101,37 @@ a:hover {
 	padding: 5px;
 }
 
-#resume{
+/*-- RESUME --*/
+
+#resume {
 	background-color: #9068be;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-#resume h4{
+
+#resume h4 {
 	padding-top: 60px;
 	padding-bottom: 15px;
-}
-
-* {
-	box-sizing: border-box;
 }
 
 #resume h2 { 
 	font-size: 20px;
 	margin: 0 0 6px 0;
 }
+
 #resume h2 span {
 	font-size: 16px;
 	font-weight: normal;
 	font-family: Georgia, serif;
 	font-style: italic;
 }
+
 #resume p {
 	margin: 0 0 0 0;
 }
+
 #resume dt {
 	font-style: italic;
 	font-weight: bold;
@@ -116,12 +142,14 @@ a:hover {
 	width: 150px;
 	border-right: 1px solid white; /*specify width, style, color of border*/
 }
+
 #resume dl {
 	display: table; /*makes dl behave like <tr>*/
 	margin-left: auto;
 	margin-right: auto;
 	
 }
+
 #resume dl dt, dl dd {
 	display: table-cell; /*makes elements behave like <td>*/
 	padding-bottom: 20px;
@@ -131,14 +159,18 @@ a:hover {
 	padding-left: 26px;
 }
 
-#contact{
+/*-- CONTACT --*/
+
+#contact {
 	background-color: #62bcfa;
 	font-weight: normal;
 	padding: 75px;
 }
+
 #contact {
 	text-align: center;
 }
+
 #contact p {
 	text-align: center;
 	font-size: 18px;
@@ -149,5 +181,3 @@ a:hover {
 	color: white;
 	text-decoration: none;
 }
-
-@media screen
