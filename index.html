@@ -3,44 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Bernardo Binda</title>
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<script src="js/"></script>		
-	<script type="text/javascript">
-	$(function() 
-	{
-		$('a[href*="#"]:not([href="#"])').click(function() 
-		{
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) 
-			{
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) 
-				{
-					$('html, body').animate(
-					{
-						scrollTop: target.offset().top - 72
-					}, 1000);
-					return false;
-
-						
-				}
-			}
-		});
-	});
-	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/notificationScript.js"></script>
 </head>
 
 <body>
-
 	<div id="header">
-		<ul>
-			<li><a href="#who-i-am">Who I Am</a></li>
-			<li><a href="#background">Background</a></li>
-			<li><a href="#resume">Resume</a></li>
-			<li><a href="#contact">Contact Info</a></li>
-		</ul>
+		<nav>
+			<a href="#who-i-am">Who I Am</a> |
+			<a href="#background">Background</a> |
+			<a href="#resume">Resume</a> |
+			<a href="#contact">Contact Info</a>
+		</nav>
 	</div>
 
 	<div id="who-i-am">
@@ -153,10 +131,6 @@
 			</dd>
 		</dl>
 		</div>
-
-		<div id="meetup">
-			<h2>Upcoming Meetups</h2>
-		</div>
 		
 		<div id="contact">
 				<h4>Contact Info</h4>
@@ -164,6 +138,11 @@
 				<p><a href="tel:1-203-733-8213"><i class="fa fa-phone"></i> 203-733-8213</a></p>
 				<p><a href="https://github.com/BindaB"><i class="fa-2x fa fa-github"></i></a> GitHub</p>				
 		</div>
-
+		
+			
+		<div id="notification">
+			<h1>Hi!</h1>
+			<p> Thank you for visiting my site. Feel free to e-mail me suggestions if you think of any!</p>
+		</div>
 	</body>
 </html>
