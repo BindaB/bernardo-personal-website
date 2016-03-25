@@ -1,18 +1,9 @@
 $(function() {
        
-	$('#notification').toggle().css(
-	{
-		width: '520px',
-		height: '150px',
-		position: 'fixed',
-		padding: '1em',
-		bottom: 0,
-		right: 0,
-		background: '#e62739'
-	});
+	$('#notification').toggle();
    
 	$(window).scroll(function() {
-		if($(this).scrollTop() > 200) {
+		if($(this).scrollTop() > 950) {
 			$('#notification').fadeIn();
 		}
 		else {

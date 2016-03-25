@@ -187,7 +187,16 @@ a:hover {
 #notification {
 	color: white;
 	font-size: 20px;
+	width: 400px;
+	height: 150px;
+	position: fixed;
+	padding: 16px;
+	bottom: 5px;
+	right: 5px;
+	background: #e62739;
+	border-radius: 25px;
 }
+
 #notification h1 {
 	font-weight: bold;
 	font-size: 36px;
@@ -195,3 +204,4 @@ a:hover {
 
 #notification p {
 	padding-top: 10px;
+}
