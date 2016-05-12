@@ -1,2 +1,2 @@
 # bernardo-personal-website
-An initial test repo for A100 Apprentices to use to practice on.
+A repo for my personal website that contains some information about me and my resume. Buiit in HTML/CSS
